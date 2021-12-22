@@ -5,6 +5,7 @@ body{
     background-color: rgb(211, 211, 211);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 header{
    height: auto;
    background-image: url("../images/images\ \(4\).jpg");
@@ -118,6 +119,7 @@ h1{
     max-width: 100%;
     height: auto;
 }
+
   body {
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
