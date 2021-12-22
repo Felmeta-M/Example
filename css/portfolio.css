@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+  background-color: #dfe2e6; 
+}
+header{
+  width: 98%;
+   height: auto;
+   background-image: url("../images/images\ \(2\).jpg");
+   top: 0px;
+   flex-wrap: wrap;
+   padding: 5px;
+   max-width: auto;
+   width: 95%;
+   margin: 20px auto;
+  }
+h2{
+   position: relative;
+   padding: 3px;
+   float:left;
+   margin-left: 2%;
+   margin-top: 20px;
+   color: rgb(8, 10, 8);
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 30px;
+  }
+ nav ul li a{
+    border: 1px solid;
+    border-radius: 0.5em;
+    padding: 0.2em 0.2em;
+    text-align: center;
+    outline:medium groove rgb(29, 231, 221);
+    color: rgb(80, 52, 77);
+    text-decoration: none;
+    font-size: 4.2vh;
+ }
+ nav ul li a:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: gold;
+ }
+@media screen and (min-width: 650px) {
+    body {
+      background-color: #ffffff;
+    }
+  }
+.item1 { grid-area: header;
+  border-radius: 5px;
+ }
+.item2 { 
+  border-radius: 5px;
+  grid-area: about;
+  max-width: 100%;
+ }
+.item3 { 
+  border-radius: 5px;
+  grid-area: photo;
+  max-width: 100%;
+  height: auto;
+ }
+ .myphoto{
+   max-width: 100%;
+   height: auto;
+ }
+.item4 { 
+  border-radius: 5px;
+  grid-area: tablee;
+ }
+ table, td, th {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+  background-image: url("../images/pexels-andreea-ch-1166644.jpg");
+  border-radius: 5px;
+}
+th {
+  height: 70px;
+  background-image: url("../images/pexels-francesco-ungaro-673648.jpg");
+}
+.item5 { grid-area: para;
+  border-radius: 5px;
+ }
+.item6 { 
+  border-radius: 5px;
+  grid-area: music;
+}
+.audio{
+  max-width: 100%;
+}
+.item7 { grid-area: list;
+  border-radius: 5px;
+ }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'about about about photo photo photo'
+      'tablee tablee tablee tablee tablee tablee'
+      'para para para para para para'
+      'music music music list list list'
+      'footer footer footer footer footer footer';
+    grid-gap: 5px;
+    padding: 5px;
+}
+.grid-container > div {
+  background-image: url("../images/pexels-ovan-62693.jpg");
+    text-align: left;
+    padding: 0;
+    overflow: auto;
+}
+div.item1{
+  background-color: rgb(118, 219, 131);
+  padding: 1em;
+}
+div.item2{
+  padding: 1em;
+  background-color: rgb(118, 219, 131);
+}
+div.item5{
+  background-color: rgb(219, 217, 118);
+}
+div.item6{
+  border-radius: 5px;
+  background-color: rgb(90, 111, 206);
+}
+div.item7{
+  background-color: rgb(118, 219, 131);
+}
+div.item8{
+  background-color: rgb(124, 191, 202);
+}
+#footer{
+  background-color: rgb(72, 212, 236);
+  height: auto;
+  margin: 1em;
+  display: flex;
+  overflow: auto;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.h3{
+  margin: 1em;
+  float: left;
+  width: 45%;
+}
+h3{
+  padding-left: 1em;
+}
+.h3 ul{
+  list-style: none;
+  padding: 1em;
+}
+.h3 ul li{
+  padding: 0.5em;
+}
+.h3 ul li a{
+  text-decoration: none;
+}
+.footer-col{
+  float: left;
+  margin: 1em;
+  
+}
+.social-links{
+  margin: 10px;
+  margin-top: 1em;
+  padding-bottom: 1em;
+}
+.social-links a{
+  margin: 10px;
+  padding: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+}
+.social-links a:hover{
+  margin: 1em;
+  padding: 1em;
+  background-color: rgb(234, 243, 109);
+} 
+@media(max-width:767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom:  30px;
+  }
+}
+@media(max-width:574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+p{
+  font-size: 20px;
+  margin: 2em;
+  padding: 2em;
+}
+.item7 a{
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}
+.item7 a:hover{
+  background-color: yellow;
+}
